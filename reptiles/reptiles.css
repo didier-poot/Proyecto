@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barra {
+    display: flex;
+    margin: 20px;
+    height: 50px;
+    width: 95%;
+    justify-content: space-between;
+    background-color: #333;
+    border: 2px solid black;
+}
+
+.logop {
+    display: flex;
+    align-items: center;
+}
+
+.nombre {
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.logop img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.horizontal {
+    width: 20%;
+    display: flex;
+    list-style: none;
+    margin-right: 80px;
+    justify-content: space-around;
+}
+
+.horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.horizontal li:hover {
+    background-color: black;
+}
+
+.menuvr {
+    position: absolute;
+    list-style: none;
+    display: none;
+    width: 110px;
+    background-color: rgba(0,0,0, .5);
+}
+
+.menuvr li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menuvr > li > a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.horizontal li:hover .menuvr {
+    display: block;
+}
+
+.menuvr li:hover {
+    background-color: black;
+}
+
+.barra .horizontal li:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.barra .horizontal li :hover {
+    color: rgba(179, 162, 9, 0.819);
+}
+
+#cuerpo {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.encabezado {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    width: 50%;
+    height: 150px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.img {
+    display: block;
+    object-fit: cover;
+    min-width: 50px;
+    width: 100%;
+    flex: 1;
+    transition: flex .5s;
+    -webkit-transition: flex .5s;
+    -moz-transition: flex .5s;
+    -ms-transition: flex .5s;
+    -o-transition: flex .5s;
+}
+
+.img:hover {
+    flex: 3;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.imagen {
+    margin: 8px;
+}
+
+.contenido {
+    height: 350px;
+}
+
+.contenido h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium
+}
