@@ -176,3 +176,60 @@ body {
     -ms-transform: translateY(-3%);
     -o-transform: translateY(-3%);
 }
+
+#desplegable {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#contenido-animales {
+    background-color: #fff;
+}
+
+.contenido-animales label{
+    display: block;
+    padding: 10px;
+    background-color: #1c1c1c;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+    margin-left: 10%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.contenido-animales label:hover {
+    background-color: #2e2e2e;
+}
+
+.contenido-animales .contenanimal {
+    padding: 0px;
+    margin: 0px 20px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.botondes:checked ~ .contenanimal {
+    max-height: 1500px;
+}
+
+.botondes {
+    display: none;
+}
